@@ -5,92 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV | Dr. Nguyen Long Giang</title>
     <style>
-        :root { --primary: #2563eb; --text: #1f2937; --bg: #ffffff; }
-        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.5; color: var(--text); max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #f3f4f6; }
-        .cv-container { background: var(--bg); padding: 50px; border-radius: 8px; shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: var(--primary); font-size: 2.5rem; }
-        .subtitle { font-size: 1.2rem; color: #4b5563; font-weight: 500; }
-        .contact-info { margin-top: 10px; font-size: 0.9rem; color: #6b7280; }
-        section { margin-bottom: 30px; }
-        h2 { font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; margin-bottom: 15px; }
-        .item { margin-bottom: 15px; }
-        .item-title { font-weight: 700; display: flex; justify-content: space-between; }
-        .item-desc { font-size: 0.95rem; color: #4b5563; margin-top: 5px; }
-        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .tag { background: #eff6ff; color: #1e40af; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; margin-right: 5px; border: 1px solid #bfdbfe; }
-        footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #9ca3af; }
+        :root { --primary: #0f172a; --accent: #3b82f6; --text: #334155; --bg: #f8fafc; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--text); max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: var(--bg); }
+        .cv-card { background: #ffffff; padding: 50px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 8px solid var(--accent); }
+        header { border-bottom: 1px solid #e2e8f0; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.2rem; font-weight: 800; }
+        .title { font-size: 1.1rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .info { margin-top: 10px; font-size: 0.9rem; color: #64748b; }
+        section { margin-bottom: 35px; }
+        h2 { font-size: 1.2rem; color: var(--primary); border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 20px; text-transform: uppercase; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .exp-item { margin-bottom: 20px; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: 700; color: var(--primary); }
+        .tag { background: #eff6ff; color: #2563eb; padding: 3px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; border: 1px solid #dbeafe; margin: 2px; display: inline-block; }
+        .highlight { color: var(--accent); font-weight: 600; }
+        footer { text-align: center; font-size: 0.8rem; color: #94a3b8; margin-top: 40px; }
     </style>
 </head>
 <body>
 
-<div class="cv-container">
+<div class="cv-card">
     <header>
         <h1>Nguyen Long Giang, MD.</h1>
-        <div class="subtitle">Medical Practitioner & Health-Tech Developer</div>
-        <div class="contact-info">
-            📍 Ho Chi Minh City, Vietnam | 📧 bslonggiang@gmail.com | 🌐 nguyenlonggiang.is-a.dev
+        <div class="title">OB/GYN Specialist & Health-Tech Developer (Born 199x)</div>
+        <div class="info">
+            📍 Viet Yen Health Center | 📧 bsnguyenlonggiang@gmail.com | 🛠 Hardware Enthusiast
         </div>
     </header>
 
     <section>
-        <h2>Professional Summary</h2>
-        <p>Medical professional with a strong passion for integrating Information Technology into clinical practice. Specialized in developing self-hosted infrastructure for medical research, optimizing EHR workflows, and implementing secure data management systems using modern DevOps tools.</p>
-    </section>
-
-    <section>
-        <h2>Technical Expertise (DevOps & Research)</h2>
-        <div class="skills-grid">
-            <div>
-                <strong>Infrastucture:</strong> 
-                <span class="tag">Synology DS920+</span> <span class="tag">Docker</span> <span class="tag">Linux</span>
-            </div>
-            <div>
-                <strong>Networking:</strong> 
-                <span class="tag">Cloudflare Tunnel</span> <span class="tag">Zero Trust</span> <span class="tag">Nginx</span>
-            </div>
-            <div>
-                <strong>Web Development:</strong> 
-                <span class="tag">PHP / CakePHP</span> <span class="tag">HTML5/CSS3</span> <span class="tag">API Dev</span>
-            </div>
-            <div>
-                <strong>Medical Systems:</strong> 
-                <span class="tag">OpenEMR</span> <span class="tag">Health Data Analytics</span>
-            </div>
+        <h2>Professional Background</h2>
+        <div class="exp-item">
+            <div class="exp-header"><span>Clinical Practitioner</span><span>Current</span></div>
+            <p>Obstetrics and Gynecology Specialist at <strong>Viet Yen Health Center</strong>.</p>
+        </div>
+        <div class="exp-item">
+            <div class="exp-header"><span>Postgraduate Education</span><span>Hanoi Medical University</span></div>
+            <p>Specializing in advanced clinical workflows and medical management.</p>
+        </div>
+        <div class="exp-item">
+            <div class="exp-header"><span>Academic Degree</span><span>Hai Duong Medical Technical University</span></div>
         </div>
     </section>
 
     <section>
-        <h2>Key Technical Projects</h2>
-        <div class="item">
-            <div class="item-title">
-                <span>Medical Home-Lab Infrastructure</span>
-                <span>2025 - Present</span>
-            </div>
-            <div class="item-desc">Architected a secure private cloud environment on Synology DS920+ to host containerized medical applications. Implemented Cloudflare Zero Trust to ensure HIPAA-compliant remote access.</div>
-        </div>
-        <div class="item">
-            <div class="item-title">
-                <span>OpenEMR Customization Lab</span>
-                <span>Ongoing</span>
-            </div>
-            <div class="item-desc">Developing custom modules and RESTful APIs for OpenEMR using the CakePHP framework to enhance clinical reporting and patient data interoperability.</div>
+        <h2>DevOps & Hardware Projects (Home-Lab)</h2>
+        <div class="exp-item">
+            <p>Developing a self-hosted medical environment to bridge the gap between clinical practice and IT efficiency.</p>
+            <ul>
+                <li><strong>Hardware Modding:</strong> Deploying and optimizing <span class="highlight">Xpenology</span> on <span class="highlight">Dell Wyse 5070 Thin Clients</span> for medical file servers.</li>
+                <li><strong>EHR Research:</strong> Evaluating and customizing open-source Healthcare Management Systems (HMS) including <span class="tag">OpenEMR</span>, <span class="tag">OpenMRS</span>, <span class="tag">HospitalRun</span>, and <span class="tag">Frappe Health</span>.</li>
+                <li><strong>Networking:</strong> Managing secure remote access via <span class="tag">Cloudflare Tunnels</span> and <span class="tag">Zero Trust</span> architecture.</li>
+            </ul>
         </div>
     </section>
 
     <section>
-        <h2>Education</h2>
-        <div class="item">
-            <div class="item-title">
-                <span>Doctor of Medicine (MD)</span>
-                <span>Vietnam</span>
+        <h2>Technical Stack</h2>
+        <div class="grid">
+            <div>
+                <strong>Systems:</strong> <span class="tag">Docker</span> <span class="tag">NAS/Xpenology</span> <span class="tag">Linux</span>
+            </div>
+            <div>
+                <strong>HMS Frameworks:</strong> <span class="tag">PHP</span> <span class="tag">Python/Frappe</span> <span class="tag">MySQL</span>
             </div>
         </div>
     </section>
 </div>
 
 <footer>
-    Generated by GitHub Pages | Documentation for nguyenlonggiang.is-a.dev
+    This site serves as a technical landing page for my research lab at nguyenlonggiang.is-a.dev
 </footer>
 
 </body>
