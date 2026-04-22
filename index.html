@@ -3,55 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Nguyen Long Giang | Med-Tech & DevOps Lab</title>
+    <title>CV | Dr. Nguyen Long Giang</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1a202c; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #f8fafc; }
-        header { background: #1e293b; color: #f8fafc; padding: 3rem 2rem; border-radius: 12px; text-align: center; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .badge { background: #3b82f6; color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; margin: 5px; display: inline-block; text-transform: uppercase; }
-        .section { background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 25px; border-top: 4px solid #3b82f6; }
-        h1 { margin: 0; font-size: 2.4rem; letter-spacing: -1px; }
-        h2 { color: #1e293b; margin-top: 0; font-size: 1.4rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 12px; }
-        code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; color: #ef4444; font-family: 'Consolas', monospace; font-size: 0.95em; }
-        footer { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 60px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
+        :root { --primary: #2563eb; --text: #1f2937; --bg: #ffffff; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.5; color: var(--text); max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #f3f4f6; }
+        .cv-container { background: var(--bg); padding: 50px; border-radius: 8px; shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.5rem; }
+        .subtitle { font-size: 1.2rem; color: #4b5563; font-weight: 500; }
+        .contact-info { margin-top: 10px; font-size: 0.9rem; color: #6b7280; }
+        section { margin-bottom: 30px; }
+        h2 { font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; margin-bottom: 15px; }
+        .item { margin-bottom: 15px; }
+        .item-title { font-weight: 700; display: flex; justify-content: space-between; }
+        .item-desc { font-size: 0.95rem; color: #4b5563; margin-top: 5px; }
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .tag { background: #eff6ff; color: #1e40af; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; margin-right: 5px; border: 1px solid #bfdbfe; }
+        footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #9ca3af; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Dr. Nguyen Long Giang</h1>
-    <p>Medical Professional & Open Source Contributor</p>
-    <div>
-        <span class="badge">OpenEMR</span>
-        <span class="badge">CakePHP MVC</span>
-        <span class="badge">Docker Compose</span>
-        <span class="badge">Synology DS920+</span>
-    </div>
-</header>
+<div class="cv-container">
+    <header>
+        <h1>Nguyen Long Giang, MD.</h1>
+        <div class="subtitle">Medical Practitioner & Health-Tech Developer</div>
+        <div class="contact-info">
+            📍 Ho Chi Minh City, Vietnam | 📧 bslonggiang@gmail.com | 🌐 nguyenlonggiang.is-a.dev
+        </div>
+    </header>
 
-<div class="section">
-    <h2>🧪 Current Research: Health Information Systems</h2>
-    <p>I am currently focusing on customizing <strong>OpenEMR</strong> to improve clinical data interoperability. My development environment is centered around:</p>
-    <ul>
-        <li>Implementing <code>RESTful API</code> layers using the <strong>CakePHP</strong> framework for secure EHR access.</li>
-        <li>Architecting microservices via <code>Docker Compose</code> to ensure scalable medical service deployment.</li>
-        <li>Deploying <code>Cloudflare Zero Trust</code> tunnels for end-to-end encrypted medical data research.</li>
-    </ul>
-</div>
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Medical professional with a strong passion for integrating Information Technology into clinical practice. Specialized in developing self-hosted infrastructure for medical research, optimizing EHR workflows, and implementing secure data management systems using modern DevOps tools.</p>
+    </section>
 
-<div class="section">
-    <h2>🛠 Infrastructure & Lab Management</h2>
-    <p>The backend is powered by a <strong>Synology DS920+</strong> (Intel J4125, 20GB RAM) acting as a private development cloud. I am testing <code>Nginx Proxy Manager</code> configurations to handle internal routing for various medical research databases.</p>
-</div>
+    <section>
+        <h2>Technical Expertise (DevOps & Research)</h2>
+        <div class="skills-grid">
+            <div>
+                <strong>Infrastucture:</strong> 
+                <span class="tag">Synology DS920+</span> <span class="tag">Docker</span> <span class="tag">Linux</span>
+            </div>
+            <div>
+                <strong>Networking:</strong> 
+                <span class="tag">Cloudflare Tunnel</span> <span class="tag">Zero Trust</span> <span class="tag">Nginx</span>
+            </div>
+            <div>
+                <strong>Web Development:</strong> 
+                <span class="tag">PHP / CakePHP</span> <span class="tag">HTML5/CSS3</span> <span class="tag">API Dev</span>
+            </div>
+            <div>
+                <strong>Medical Systems:</strong> 
+                <span class="tag">OpenEMR</span> <span class="tag">Health Data Analytics</span>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-    <h2>🚀 Technical Goals</h2>
-    <p>My objective is to bridge the gap between clinical practice and modern <strong>DevOps</strong> practices, ensuring that medical software is both robust and secure.</p>
+    <section>
+        <h2>Key Technical Projects</h2>
+        <div class="item">
+            <div class="item-title">
+                <span>Medical Home-Lab Infrastructure</span>
+                <span>2025 - Present</span>
+            </div>
+            <div class="item-desc">Architected a secure private cloud environment on Synology DS920+ to host containerized medical applications. Implemented Cloudflare Zero Trust to ensure HIPAA-compliant remote access.</div>
+        </div>
+        <div class="item">
+            <div class="item-title">
+                <span>OpenEMR Customization Lab</span>
+                <span>Ongoing</span>
+            </div>
+            <div class="item-desc">Developing custom modules and RESTful APIs for OpenEMR using the CakePHP framework to enhance clinical reporting and patient data interoperability.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-title">
+                <span>Doctor of Medicine (MD)</span>
+                <span>Vietnam</span>
+            </div>
+        </div>
+    </section>
 </div>
 
 <footer>
-    <p>&copy; 2026 Dr. Nguyen Long Giang | Research Portfolio | Powered by GitHub Pages</p>
+    Generated by GitHub Pages | Documentation for nguyenlonggiang.is-a.dev
 </footer>
 
 </body>
